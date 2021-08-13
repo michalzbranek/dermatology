@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block title %}<title>Dermatologie Zlín</title>{% endblock %}
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>      <!-- Add additional CSS in static file -->
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light p-0" style="background-color: white !important;">
+            <div class="container-fluid pe-0">
+              <a class="navbar-brand ms-5 fs-3" id="brand" href="#"><p class="text-secondary fs-5 m-0 p-0">JANE DOE</p>Dermatologie Zlín</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" style="height: 90px;" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-5 mb-lg-0 fs-5 me-0 pe-0" style="height: 100%;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Domů</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#services">Služby</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#reservation">Rezervace</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">Kontakt</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+    <section id="services" class="text-white" style="background-color: #A4668F;">
+        <div class="container pb-0 mt-0">
+          <div class="row">
+            <div class="col-md-8">
+              <h3 class="mt-5 mb-0">MUDr. Jane Doe</h3>
+              <h2 class="mt-0">Specializuji se na diagnostiku a léčbu onemocnění kůže, nehtů a vlasů.</h2>
+              <p>
+  
+  Jedná se o <strong>zánětlivá onemocnění kůže</strong> jako je akné, růžovka, ekzém, lupénka, seborhoická dermatitida, 
+  plísňová onemocnění kůže a nehtů, polékové reakce, kožní projevy související se systémovými onemocněními, 
+  problematiku suché kůže. V nejasných případech provádím <strong>kožní biopsii</strong>, 
+  která může být někdy nezbytná k určení správné diagnózy.<br>
+  <br>
+  Dále se zaměřuji na <strong>prevenci vzniku kožních nádorů</strong>, provádím pravidelné <strong>kontroly znamínek</strong> dermatoskopem. 
+  Pacienti s anamnézou kožních nádorů jsou pravidelně sledováni - jedná se zejména
+  o&nbsp;bazaliom, spinaliom, maligní melanom.<br>
+  <br>
+  Dále <strong>léčím nezhoubné projevy na kůži</strong> jako jsou virové bradavice (tekutým dusíkem), odstraňuji stařecké bradavice, fibromy (kožní výrůstky) a některé intradermální névy. Provádím i další <strong>estetické výkony</strong> jako je chemický peeling, aplikaci <strong>botulotoxinu</strong> a v<strong>ýplní kyselinou hyaluronovou</strong>.<br><br>
+  
+  Nově provádím <strong>nastřelování náušnic</strong> a <strong>neinvazivní blefaroplastiku očních víček</strong> a ošetření <strong>cigaretových vrásek nad horním rtem</strong> přístrojem <strong>JETT Plasma Lift Medical<strong/>.
+            
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img src="">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    {% block content %}{% endblock %}
+
+    <section id="about">
+
+        <div class="container py-5">
+            <div class="row">
+              <div class="col-md-6 m-0 p-0">
+                        <div class="col-md-6">
+                            <i class="bi bi-phone" style="font-size: 2rem;"></i>
+                            <h5>Zavolejte nám</h5>
+                            <p>Telefon:&nbsp;+420&nbsp;123&nbsp;456&nbsp;789</p>
+                        </div>
+                        <div class="col-md-6">
+                            <i class="bi bi-map" style="font-size: 2rem;"></i>
+                            <h5>Adresa</h5>
+                            <p>1284 Carriage Court, Carlsbad, 92009</p>
+                        </div>
+              </div>
+
+              <div class="col-md-6 m-0 p-0">
+                  <h5>Ordinační doba</h5>
+                  <div class="row">
+                    <div class="col-md-4 m-0 p-0">
+                      <ul class="m-0 p-0 border-class" style="list-style-type: none; line-height: 300%">
+                        <li>
+                          <i class="bi bi-clock"></i>&nbsp;&nbsp;&nbsp;<span>Pondělí</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-clock"></i>&nbsp;&nbsp;&nbsp;<span>Úterý</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-clock"></i>&nbsp;&nbsp;&nbsp;<span>Středa</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-clock"></i>&nbsp;&nbsp;&nbsp;<span>Čtvrtek</span>
+                        </li>
+                        <li style="border-bottom: none !important;">
+                          <i class="bi bi-clock"></i>&nbsp;&nbsp;&nbsp;<span>Pátek</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-8 m-0 p-0">
+                      <ul class="m-0 p-0 border-time" style="list-style-type: none; line-height: 300%">
+                        <li>
+                          <span>7:30 – 12:30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13:00 – 16:00</span>
+                        </li>
+                        <li>
+                          <span>7:30 – 12:30</span>
+                        </li>
+                        <li>
+                          <span>10:00 – 13:30</span>
+                        </li>
+                        <li>
+                          <span>7:00 – 12:30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13:00 – 17:00</span>
+                        </li>
+                        <li style="border-bottom: none !important;">
+                          <span>7:00 – 11:00</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+    <footer class="footer text-center pb-2 pt-3 pt-md-4">
+       Created by 
+       <a id="createdBy" href="https://michalzbranek.github.io/portfolio/" target="_blank" style="color: black; text-decoration: underline;">Michal Zbranek</a>
+       <p>© 2021 All rights reserved</p>
+    </footer>
+
+  </body>
+</html>

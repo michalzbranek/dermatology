@@ -1,0 +1,28 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<section id="reservation">
+    <div class="container py-5">
+      
+      <h1>Rezervace</h1>
+      <div class="pt-5">
+          <form action="/" method="POST">
+              <div class="form-group">
+                  <label><h6>Jméno:</h6></label>
+                  <input class="form-control" type="text" name="reservation[name]" required>
+              </div>
+              <div class="form-group">
+                  <label><h6>Telefon:</h6></label>
+                  <input class="form-control" type="text" name="reservation[phone]" required>
+              </div>
+              <div class="form-group">
+                  <label><h6>Email:</h6></label>
+                  <input class="form-control" type="text" name="reservation[email]" required>
+              </div>
+              <input class="btn btn-light mt-3" type="submit" value="Rezervace">
+          </form>
+      </div>
+    
+    </div>
+  </section>
+{% endblock %}
