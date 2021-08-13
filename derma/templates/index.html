@@ -6,18 +6,19 @@
       
       <h1>Rezervace</h1>
       <div class="pt-5">
-          <form action="/" method="POST">
+          <form action="bla" method="POST">
+              {% csrf_token %}
               <div class="form-group">
                   <label><h6>Jméno:</h6></label>
-                  <input class="form-control" type="text" name="reservation[name]" required>
+                  <input class="form-control" type="text" name="name" required>
               </div>
               <div class="form-group">
                   <label><h6>Telefon:</h6></label>
-                  <input class="form-control" type="text" name="reservation[phone]" required>
+                  <input class="form-control" type="text" name="phone" required>
               </div>
               <div class="form-group">
                   <label><h6>Email:</h6></label>
-                  <input class="form-control" type="text" name="reservation[email]" required>
+                  <input class="form-control" type="text" name="email" required>
               </div>
               <input class="btn btn-light mt-3" type="submit" value="Rezervace">
           </form>

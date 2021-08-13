@@ -75,13 +75,13 @@ WSGI_APPLICATION = 'dermatologie.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django_mongodb_engine',
-    #     'NAME': 'dermatology',
-        # 'HOST': 'mongodb+srv://BliXer:stfumiabot268@blog.47rde.mongodb.net/dermatology?retryWrites=true',
-        # 'USER': 'BliXer',
-        # 'PASSWORD': 'stfumiabot268',
-    # }
+    'default': {
+        'ENGINE': '',
+        'NAME': '',
+        'HOST': '',
+        'USER': '',
+        'PASSWORD': '',
+    }
 }
 
 from pymongo import MongoClient
