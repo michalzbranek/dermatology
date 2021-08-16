@@ -84,11 +84,6 @@ DATABASES = {
     }
 }
 
-from pymongo import MongoClient
-
-client = MongoClient("mongodb+srv://BliXer:stfumiabot268@blog.47rde.mongodb.net/dermatology?retryWrites=true&w=majority")
-db = client.dermatology
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
