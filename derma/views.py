@@ -7,23 +7,17 @@ def booking(request):
         db = client.dermatology
 
         if request.POST.get('reservation') == 'Rezervace':
-            db.reservation.update(
+            db.reservation.update_one(
                 {'name': request.POST.get('name')},
-                {
-                    "name": request.POST.get('name'),
-                    "phone": request.POST.get('phone'),
-                    "email": request.POST.get('email')
+                {   
+                    "$set": {
+                        'name': request.POST.get('name'),
+                        'phone': request.POST.get('phone'),
+                        'email': request.POST.get('email'),
+                        'time' : request.POST.get('time')
+                    }
                 },
                 upsert = True
-            )
-        else:
-            db.reservation.remove(
-                {
-                    "name": request.POST.get('name'),
-                    "phone": request.POST.get('phone'),
-                    "email": request.POST.get('email')
-                },
-                multi = False
             )
 
         return render(request, 'index.html')
