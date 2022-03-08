@@ -1,0 +1,68 @@
+html {
+	scroll-behavior: smooth;
+}
+
+nav .navbar-nav li:hover {
+    background-color: #A4668F !important;
+}
+
+a:hover {
+    color: white !important;
+}
+
+nav .navbar-nav li:hover {
+    color: white !important;
+}
+
+nav .navbar-nav li a {
+    height: 90px;
+    line-height: 90px;
+    padding: 0;
+}
+
+#brand:hover {
+    color: black !important;
+}
+
+#about {
+    background-color: #A4668F !important;
+    color: white !important;
+}
+
+nav .navbar-nav li {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#createdBy:hover {
+    color: #A4668F !important;
+}
+
+.border-class li {
+    border-bottom: 1px solid white;
+}
+
+.border-time li {
+    border-bottom: 1px solid white;
+}
+
+.border-class li {
+    border-right: 1px solid white;
+}
+
+.border-time li span {
+    margin-left: 20px;
+}
+
+ul i {
+    margin-left: 12px;
+}
+
+body {
+    padding-top: 90px;
+}
+
+.form-group {
+    width: 30%;
+    margin-bottom: 10px;
+}
