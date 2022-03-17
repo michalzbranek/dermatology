@@ -6,6 +6,18 @@ nav .navbar-nav li:hover {
     background-color: #A4668F !important;
 }
 
+.navbar-brand {
+    font-family: 'Russo One', sans-serif;
+}
+
+.navbar-nav {
+    font-family: 'Russo One', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Russo One', sans-serif;
+}
+
 a:hover {
     color: white !important;
 }
